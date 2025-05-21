@@ -1,0 +1,25 @@
+# Node
+node_modules/
+*.log
+*.lock
+
+# Expo
+apps/app-mobile/.expo/
+apps/app-mobile/.expo-shared/
+apps/app-mobile/dist/
+
+# Next.js
+apps/app-web/.next/
+apps/app-web/out/
+
+# Sistemas
+.DS_Store
+.env
+.idea/
+.vscode/
+
+
+#temporario 
+
+apps/app-api
+teste

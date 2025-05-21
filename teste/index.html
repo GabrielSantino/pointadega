@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Point Adega - E-commerce de Bebidas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="IMG/logo.jpg" alt="Point Adega"> 
+        </div>
+        <div class="menu">
+            <div class="pesquisar">
+                <button id="searchBtn" onclick="toggleSearch()">Pesquisar</button>
+                <input type="text" id="searchBox" placeholder="Buscar...">
+            </div>
+            <nav>    
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#" class="btn">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>As melhores bebidas com entrega rápida e segura.</h1>
+            <a href="#" class="btn">Ver Produtos</a>
+        </div>
+    </section>
+
+    <section class="delivery">
+        <h2>Calcule o Frete</h2>
+        <input type="text" name="" id="address" placeholder="Digite seu endereço...">
+        <button onclick="calcularFrete()">Ver Preço</button>
+        <p id="frete-info"></p>        
+    </section>
+    
+    <section class="products">
+        <h2>Destaques</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="IMG/download.jfif" alt="Bebida 1">
+                <h3>Whisky Premium</h3>
+                <p>R$ 199,90</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <div class="product-card">
+                <img src="IMG/download (1).jfif" alt="Bebida 2">
+                <h3>Vinho Tinto</h3>
+                <p>R$ 89,90</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Point Adega. Todos os direitos reservados.</p>
+        <p>Desenvolvido por Gabriel Santino.</p>
+        <p>Licenciado sob a <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        function toggleSearch() {
+            const searchBox = document.getElementById('searchBox');
+            searchBox.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
